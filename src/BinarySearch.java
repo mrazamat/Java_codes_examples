@@ -8,12 +8,10 @@ public class BinarySearch {
         int[] arr = new int[128];
 
         for (int i = low; i < high; i++) {
-            arr[i]=i;
+            arr[i] = i;
         }
         System.out.println(Arrays.toString(arr));
-        System.out.printf("Key is %s index of key is %s",key,runBinarySearch(arr,key,low,high));
-
-
+        System.out.printf("Key is %s index of key is %s", key, runBinarySearch(arr, key, low, high));
     }
 
     private static int runBinarySearch(int[] sortedArray, int key, int low, int high) {
@@ -23,9 +21,9 @@ public class BinarySearch {
             int mid = (low + high) / 2;
             if (sortedArray[mid] < key) {
                 low = mid + 1;
-            } else if (sortedArray[mid]>key){
+            } else if (sortedArray[mid] > key) {
                 high = mid - 1;
-            } else if (sortedArray[mid]==key){
+            } else if (sortedArray[mid] == key) {
                 index = mid;
                 break;
             }
