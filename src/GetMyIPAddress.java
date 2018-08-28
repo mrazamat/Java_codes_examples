@@ -14,6 +14,8 @@ public class GetMyIPAddress {
             String ip = socket.getLocalAddress().getHostAddress();
             System.out.println(ip);
         }
+        // Get Host name
+        System.out.println("Host Name:- " + myIP.getHostName());
 
 
     }
