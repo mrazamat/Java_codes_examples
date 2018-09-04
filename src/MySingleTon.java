@@ -1,15 +1,17 @@
 public class MySingleTon {
     private static MySingleTon myObj;
-    private MySingleTon(){
+
+    private MySingleTon() {
 
     }
-    public static MySingleTon getInstance(){
-        if(myObj == null)
+
+    public static MySingleTon getInstance() {
+        if (myObj == null)
             myObj = new MySingleTon();
         return myObj;
     }
 
-    public void getSomeThing(){
+    public void getSomeThing() {
         System.out.println("I am here....");
     }
 
