@@ -1,3 +1,5 @@
+package uz.coder.generics;
+
 public class MySimpleGenerics {
     // Write a simple generics class example
     public static void main(String[] args) {
