@@ -1,5 +1,6 @@
 package uz.coder.collections.linkedlist;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class MyBasicOperations {
@@ -16,8 +17,18 @@ public class MyBasicOperations {
         list.add("Grape");
         list.add("Banana");
         System.out.println(list);
+
+        // Read all elements in LinkedList by using iterator
+        Iterator<String> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
+        }
+        // Basic operations
         System.out.println("Size of the linked list: " + list.size());
         System.out.println("Is LinkedList empty?: " + list.isEmpty());
         System.out.println("Does LinkedList contains 'Grape'?: " + list.contains("Grape"));
+        // Copy or clone a LinkedList
+        LinkedList<String> copy = (LinkedList<String>) list.clone();
+        System.out.println("Cloned Linkedlist: " + copy);
     }
 }
