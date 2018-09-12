@@ -15,6 +15,5 @@ public class ReadingEntireFileWithoutLoop {
 
         sc.useDelimiter("\\Z");
         System.out.println(sc.next());
-
     }
 }
