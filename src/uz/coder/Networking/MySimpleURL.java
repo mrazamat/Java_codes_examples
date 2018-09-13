@@ -12,7 +12,7 @@ import java.net.URL;
 
 public class MySimpleURL {
     public static void main(String[] args) {
-        try{
+        try {
             String myURL = "https://google.com";
             URL url = new URL(myURL);
             System.out.println(url.getAuthority());
@@ -22,7 +22,7 @@ public class MySimpleURL {
             System.out.println(url.toURI());
             System.out.println(url.getHost());
             System.out.println(url.toString());
-        } catch(MalformedURLException ex){
+        } catch (MalformedURLException ex) {
             ex.printStackTrace();
         } catch (URISyntaxException e) {
             e.printStackTrace();
