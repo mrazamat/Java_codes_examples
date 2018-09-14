@@ -12,6 +12,10 @@ public class MyLocalHostName {
             // get hostname by IP address
             InetAddress host = InetAddress.getByName("216.239.38.120");
             System.out.println(host.getHostName());
+
+            // get my machine IP address
+            InetAddress ipAddr = InetAddress.getLocalHost();
+
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
