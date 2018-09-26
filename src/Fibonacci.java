@@ -19,7 +19,7 @@ public class Fibonacci {
     }
 
     public static void main(String[] args) {
-        int n = 1000;
+        int n = 10;
         System.out.println("Fibonacci of " + n +
                 "th term" + " " + "is" + " " + fib(n));
     }
