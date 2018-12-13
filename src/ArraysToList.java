@@ -7,5 +7,6 @@ public class ArraysToList {
         List<String> strList = Arrays.asList(strArr);
         System.out.println("Created List Size: " + strList.size());
         System.out.println(strList);
+
     }
 }
