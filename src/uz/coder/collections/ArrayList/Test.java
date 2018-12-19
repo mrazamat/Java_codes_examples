@@ -9,7 +9,7 @@ public class Test {
         List<Integer> list = new ArrayList<>();
 
         // add elements
-        for (int i = 0; i <=100; i++) {
+        for (int i = 0; i <= 100; i++) {
             list.add(i);
         }
 
@@ -22,7 +22,7 @@ public class Test {
         list.remove(5);
 
         // show all
-        for (int x : list){
+        for (int x : list) {
             System.out.println(x);
         }
 
