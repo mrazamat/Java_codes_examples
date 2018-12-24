@@ -14,7 +14,7 @@ public class Test1 {
         String json=GSON.toJson(person);
         System.out.println(json);
 
-        GSON.toString()
+        GSON.toString();
     }
 }
 
